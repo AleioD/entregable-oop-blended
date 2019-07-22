@@ -66,6 +66,7 @@
 			FROM actors AS a
 			INNER JOIN movies AS m
 			ON a.favorite_movie_id = m.id
+			ORDER BY a.first_name;
 			");
 
 			$stmt->execute();
